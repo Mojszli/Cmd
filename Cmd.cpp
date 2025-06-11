@@ -2,12 +2,15 @@
 
 int main() {
     std::string input;
+
+    std::cout << "Welcome to my Self Made CMD" << std::endl;
+   
     std::cout << "Enter a command: ";
     std::getline(std::cin, input);
     if(input == "ipconfig") {
         system("ipconfig");
     }
-    
+
     else if(input == "dir") {
         system("dir");
     }
