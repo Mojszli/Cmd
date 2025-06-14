@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <algorithm>
 #include <map>
+#include "network_utils.h"
 
 #ifdef _WIN32
     #include <windows.h>
@@ -293,6 +294,9 @@ public:
             }
             else if (cmd == "echo") {
                 echoText(args);
+            }
+            else if (cmd == "ipconfig") {
+                NetworkUtils::displayIpConfig();
             }
             else {
                 // Execute as system command
